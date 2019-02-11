@@ -14,6 +14,14 @@ class MainActivity<view> : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+    fun sendMessage(view: View) {
+        val editText = findViewById<EditText>(R.id.editText4)
+        val message = editText.text.toString()
+        val intent = Intent(this, DisplayMessageActivity::class.java).apply {
+            putExtra(EXTRA_MESSAGE, message)
+        }
+        startActivity(intent)
+    }
 
 
 
