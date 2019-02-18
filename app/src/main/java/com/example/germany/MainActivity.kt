@@ -13,7 +13,9 @@ class MainActivity<view> : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
     }
+
     fun sendMessage(view: View) {
         val editText = findViewById<EditText>(R.id.editText4)
         val message = editText.text.toString()
@@ -23,6 +25,15 @@ class MainActivity<view> : AppCompatActivity() {
         startActivity(intent)
     }
 
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+    }
 
-
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+    }
 }
+
+
+
+

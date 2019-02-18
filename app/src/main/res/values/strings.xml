@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">germany</string>
     <string name="places">PLACES YOU WANT TO VISIT IN GERMANY:</string>
+    <string name="title_activity_hello_darling">HelloDarling</string>
 </resources>
